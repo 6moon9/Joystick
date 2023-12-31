@@ -5,7 +5,7 @@
 class Joystick
 {
     public:
-        Joystick(uint8_t xPin, uint8_t yPin, uint8_t cPin, bool xReversed, bool yReversed, int xRest, int yRest, int xMargin, int yMargin);
+        Joystick(uint8_t xPin, uint8_t yPin, uint8_t cPin, bool xReversed, bool yReversed, int xRest, int yRest, int xMargin, int yMargin, int toMin = -1023, int toMax = 1023);
         Joystick(uint8_t xPin, uint8_t yPin, uint8_t cPin);
         Potentiometer x = Potentiometer(1);
         Potentiometer y = Potentiometer(1);
